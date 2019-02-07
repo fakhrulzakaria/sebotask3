@@ -1,0 +1,364 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    margin: 0 !important;
+}
+
+ul {
+    padding: 0 !important;
+    list-style: none;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+a:hover {
+    text-decoration: none !important;
+}
+
+p {
+    margin: 0 !important
+}
+
+.a-r {
+    text-align: right
+}
+
+html {
+    overflow-x: hidden;
+}
+
+header .container::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+header .container {
+    padding-top: 15px;
+}
+
+header .row {
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+header .row>a {
+    position: absolute;
+    left: 0;
+
+}
+
+header .navbar a {
+    font-size: 16px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #545454;
+    margin-right: 40px;
+}
+
+.right-navbar {
+    position: absolute;
+    right: 0;
+}
+
+.right-navbar a {
+    font-size: 16px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #545454;
+}
+
+.right-navbar a.btn {
+    font-size: 12px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.17;
+    letter-spacing: 0.2px;
+    text-align: center;
+    color: #ff884d;
+    padding: 13px 18px;
+    outline: none;
+    border: 1px solid #ff884d;
+    margin-left: 40px;
+}
+
+.ill-header {
+    padding-top: 120px;
+}
+
+.header {
+    display: flex;
+    align-items: center
+}
+
+.ill-right {
+    flex-flow: row-reverse;
+}
+
+.content {
+    flex: 0 460px;
+}
+
+.ill {
+    flex: auto;
+}
+
+.content h1 {
+    /* width: 505px;
+    height: 144px; */
+    font-size: 42px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.14;
+    letter-spacing: normal;
+    color: #626a74;
+}
+
+.button-group {
+    margin-top: 40px;
+    margin-bottom: 40px
+}
+
+.button-group .get-started-btn {
+    font-size: 16px;
+    font-weight: 900;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+    padding: 19px 26px;
+    background: #ff884d;
+    border-radius: 5px;
+    margin-right: 15px;
+}
+
+.button-group .watch-demo-btn {
+    font-size: 16px;
+    font-weight: 900;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ff884d;
+    padding: 19px 21px;
+    border: 1px solid #ff884d;
+    border-radius: 5px;
+}
+
+.content>p {
+    /* width: 400px;
+    height: 54px; */
+    font-size: 20px;
+    font-weight: 300;
+    font-style: oblique;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 0.1px;
+    color: #626a74;
+}
+
+.cards {
+    padding-top: 133px;
+    padding-bottom: 75px;
+}
+
+.cards .row>div {
+    padding: 0 15px 0 15px
+}
+
+.cards .row div.features-item {
+    border-radius: 5px;
+    box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.05);
+    background-color: #ffffff;
+    padding: 40px 30px 31px 30px;
+}
+
+.features-item img.icon {
+    margin-bottom: 20px;
+}
+
+.cards p.title {
+    font-size: 20px;
+    font-weight: 900;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.75;
+    letter-spacing: 0.2px;
+    color: #626a74;
+    margin-bottom: 20px !important;
+}
+
+.cards p.description {
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.67;
+    letter-spacing: 0.1px;
+    color: #626a74;
+    margin-bottom: 21px !important;
+}
+
+.features {
+    display: flex;
+    align-items: center
+}
+
+.learn-more {
+    font-size: 16px;
+    font-weight: 900;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 0.2px;
+    color: #ff884d;
+}
+
+.learn-more img {
+    width: 18px;
+    margin-left: 13px;
+}
+
+.ill-features {
+    padding-top: 75px;
+    padding-bottom: 75px
+}
+
+.ill-features.third {
+    background: #fffdfa
+}
+
+.content h2 {
+    font-size: 30px;
+    font-weight: 900;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.23;
+    letter-spacing: 0.2px;
+    color: #626a74;
+    margin-bottom: 30px !important;
+}
+
+.features .content p {
+    font-size: 18px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.94;
+    letter-spacing: 0.1px;
+    color: #626a74;
+    margin-bottom: 31px !important;
+}
+
+.ill-right.features .ill {
+    text-align: right;
+}
+
+.special-title {
+    font-size: 16px !important;
+    font-weight: 900 !important;
+    font-style: normal !important;
+    font-stretch: normal !important;
+    line-height: normal !important;
+    letter-spacing: 0.1px !important;
+    color: #626a74 !important;
+    margin-bottom: 20px !important;
+}
+
+img.ps {
+    margin-left: 10px;
+}
+
+.orange {
+    background: #ff884d;
+    padding: 100px 0
+}
+
+.orange .row {
+    align-items: center
+}
+
+.orange h3 {
+    width: 439px;
+    height: 74px;
+    font-size: 30px;
+    font-weight: 900;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.23;
+    letter-spacing: 0.2px;
+    color: #ffffff;
+}
+
+.orange-btn-group a {
+    padding-top: 19px;
+    padding-bottom: 19px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 900;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+}
+
+.btn-white {
+    padding-right: 31px;
+    padding-left: 31px;
+    color: #ff884d;
+    background: #fff;
+}
+
+.btn-outline-white {
+    padding-right: 28px;
+    padding-left: 28px;
+    border: 1px solid #fff;
+    background: #ff884d;
+    color: #fff;
+    margin-left: 15px;
+}
+
+footer {
+    padding: 100px 0 60px 0;
+}
+
+footer li.header-list {
+    font-size: 13px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.54;
+    letter-spacing: -0.4px;
+    color: #454545;
+}
+
+footer li a {
+    font-size: 13px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.54;
+    letter-spacing: -0.4px;
+    color: #a9a9a9;
+}
+
+footer ul li:nth-last-of-type(1) {
+    color: #ff884d
+}
