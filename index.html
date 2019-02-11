@@ -20,6 +20,11 @@
             <div class="container">
                 <div class="row">
                     <a href="#"><img src="assets/img/bitmap.png" alt=""></a>
+                    <svg width="22" height="14" fill="black" class="menu" id="toggle">
+                        <rect height="2" width="22" />
+                        <rect height="2" width="22" y="6" />
+                        <rect height="2" width="22" y="12" />
+                    </svg>
                     <div class="navbar">
                         <a href="#">Tour</a>
                         <a href="#">Use Cases</a>
@@ -33,25 +38,44 @@
                 </div>
             </div>
         </header>
+        <nav>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12 navbar2" id="navbar2">
+                        <ul>
+                            <li>Home</li>
+                            <li>Locations</li>
+                            <li>Plans</li>
+                            <li>Events</li>
+                            <li>Contact Us</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
         <section class="ill-header">
             <div class="container">
                 <div class="header ill-right">
-                    <div class="ill">
-                        <img src="assets/img/il-header.svg" alt="">
-                    </div>
                     <div class="content">
                         <h1>
                             Live Chat Software
                             that works hard for you, so you don’t have to.
                         </h1>
+                        <p class="responsive-hide">
+                            “Rated No.1 for smoothest implementation”
+                            G2crowd.com
+                        </p>
                         <div class="button-group">
                             <a href="#" class="get-started-btn">GET STARTED NOW</a>
                             <a href="#" class="watch-demo-btn">WATCH A DEMO</a>
                         </div>
-                        <p>
+                        <p class="responsive-show">
                             “Rated No.1 for smoothest implementation”
                             G2crowd.com
                         </p>
+                    </div>
+                    <div class="ill">
+                        <img src="assets/img/il-header.svg" alt="">
                     </div>
                 </div>
             </div>
@@ -59,7 +83,7 @@
         <section class="cards">
             <div class="container">
                 <div class="row">
-                    <div class="col-xl-4">
+                    <div class="col-sm-12 col-md-4 col-xl-4">
                         <div class="features-item">
                             <img src="assets/img/group-54.svg" alt="" class="icon">
                             <p class="title">Live Chat for Sales</p>
@@ -73,7 +97,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-xl-4">
+                    <div class="col-sm-12 col-md-4 col-xl-4">
                         <div class="features-item">
                             <img src="assets/img/group-55.svg" alt="" class="icon">
                             <p class="title">Live Chat for Marketplace</p>
@@ -87,7 +111,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-xl-4">
+                    <div class="col-sm-12 col-md-4 col-xl-4">
                         <div class="features-item">
                             <img src="assets/img/group-56.svg" alt="" class="icon">
                             <p class="title">Live Chat for Support</p>
@@ -209,10 +233,10 @@
         <section class="orange">
             <div class="container">
                 <div class="row">
-                    <div class="col-xl-6">
+                    <div class="col-12 col-md-12 col-lg-6 col-xl-6">
                         <h3>Never Miss an Opportunity to Help Your Cutomer Better</h3>
                     </div>
-                    <div class="col-xl-6 a-r">
+                    <div class="col-12 col-md-12 col-lg-6 col-xl-6 a-r">
                         <div class="orange-btn-group">
                             <a href="#" class="btn-white">GET STARTED NOW</a>
                             <a href="#" class="btn-outline-white">SCHEDULE A DEMO</a>
@@ -224,8 +248,8 @@
         <footer>
             <div class="container">
                 <div class="row">
-                    <div class="col-xl-4"><img src="assets/img/bitmap.png" alt=""></div>
-                    <div class="col-xl-2">
+                    <div class="col-12 col-md-4 col-xl-4"><img src="assets/img/bitmap.png" alt=""></div>
+                    <div class="col-6 col-md-2 col-xl-2">
                         <ul>
                             <li class="header-list">HappyFox Chat</li>
                             <li><a href="#">Pricing</a></li>
@@ -249,7 +273,7 @@
                             <li><a href="#">Mobile Customer Service</a></li>
                         </ul>
                     </div>
-                    <div class="col-xl-2">
+                    <div class="col-6 col-md-2 col-xl-2">
                         <ul>
                             <li class="header-list">Live Chat Features</li>
                             <li><a href="#">Proactive Chat</a></li>
@@ -276,7 +300,7 @@
                             <li><a href="#">API</a></li>
                         </ul>
                     </div>
-                    <div class="col-xl-2">
+                    <div class="col-6 col-md-2 col-xl-2">
                         <ul>
                             <li class="header-list">Add Live Chat to Website</li>
                             <li class="header-list">Ecommerce Live Chat</li>
@@ -293,7 +317,7 @@
                             <li><a href="#">Weebly</a></li>
                         </ul>
                     </div>
-                    <div class="col-xl-2">
+                    <div class="col-6 col-md-2 col-xl-2">
                         <ul>
                             <li class="header-list">Live Chat integration</li>
                             <li class="header-list">CRM</li>
@@ -325,5 +349,13 @@
         </footer>
     </div>
 </body>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous">
+</script>
+<script>
+    $("#toggle").click(function () {
+        $("#navbar2").slideToggle();
+    });
+</script>
 
 </html>

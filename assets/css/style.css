@@ -31,11 +31,11 @@ html {
     overflow-x: hidden;
 }
 
-header .container::after {
+/* header .container::after {
     content: "";
     clear: both;
     display: table;
-}
+} */
 
 header .container {
     padding-top: 15px;
@@ -50,7 +50,7 @@ header .row {
 header .row>a {
     position: absolute;
     left: 0;
-
+    z-index: 99;
 }
 
 header .navbar a {
@@ -94,6 +94,49 @@ header .navbar a {
     margin-left: 40px;
 }
 
+.right-navbar a.btn:hover {
+    color: #ffffff;
+    background: #ff884d;
+}
+
+.menu {
+    position: absolute;
+    top: 15px;
+    right: 0;
+    display: none;
+    z-index: 99;
+}
+
+.navbar2 {
+    /* position: absolute !important; */
+    margin-top: 60px;
+    background: #fff;
+    z-index: 2;
+    display: none;
+}
+
+.navbar2 ul {
+    text-align: center
+}
+
+.navbar2 li {
+    margin-bottom: 20px;
+    opacity: 0.67;
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 0.5px;
+    color: #2e3831;
+    transition: .3s
+}
+
+.navbar2 ul li:hover {
+    opacity: unset !important;
+    cursor: pointer;
+}
+
 .ill-header {
     padding-top: 120px;
 }
@@ -103,7 +146,7 @@ header .navbar a {
     align-items: center
 }
 
-.ill-right {
+.ill-features .ill-right {
     flex-flow: row-reverse;
 }
 
@@ -114,6 +157,11 @@ header .navbar a {
 .ill {
     flex: auto;
 }
+
+/* .ill img {
+    width: 100%;
+    height: auto;
+} */
 
 .content h1 {
     /* width: 505px;
@@ -147,6 +195,10 @@ header .navbar a {
     margin-right: 15px;
 }
 
+.button-group .get-started-btn:hover {
+    opacity: .9;
+}
+
 .button-group .watch-demo-btn {
     font-size: 16px;
     font-weight: 900;
@@ -171,6 +223,10 @@ header .navbar a {
     line-height: normal;
     letter-spacing: 0.1px;
     color: #626a74;
+}
+
+p.responsive-hide {
+    display: none
 }
 
 .cards {
@@ -228,11 +284,23 @@ header .navbar a {
     line-height: normal;
     letter-spacing: 0.2px;
     color: #ff884d;
+    display: flex;
+    align-items: center
+}
+
+.learn-more:hover {
+    color: #ff884d
+}
+
+.learn-more:hover img {
+    -webkit-transform: translateX(4px);
+    transform: translateX(4px);
 }
 
 .learn-more img {
     width: 18px;
     margin-left: 13px;
+    transition: .3s
 }
 
 .ill-features {
@@ -322,8 +390,13 @@ img.ps {
 .btn-white {
     padding-right: 31px;
     padding-left: 31px;
-    color: #ff884d;
+    color: rgb(255, 136, 77);
     background: #fff;
+}
+
+.btn-white:hover {
+    opacity: .9;
+    color: rgba(255, 136, 77, .9);
 }
 
 .btn-outline-white {
@@ -333,6 +406,10 @@ img.ps {
     background: #ff884d;
     color: #fff;
     margin-left: 15px;
+}
+
+.btn-outline-white:hover {
+    color: #fff
 }
 
 footer {
@@ -347,6 +424,11 @@ footer li.header-list {
     line-height: 1.54;
     letter-spacing: -0.4px;
     color: #454545;
+    margin-top: 40px;
+}
+
+.col-xl-2 li.header-list:nth-child(1) {
+    margin-top: 0;
 }
 
 footer li a {
@@ -359,6 +441,196 @@ footer li a {
     color: #a9a9a9;
 }
 
-footer ul li:nth-last-of-type(1) {
-    color: #ff884d
+@media screen and (max-width: 1199px) {
+    .header .ill img {
+        max-width: 100%;
+    }
+
+    .header .button-group .get-started-btn {
+        font-size: 14px;
+    }
+
+    .header .button-group .watch-demo-btn {
+        font-size: 14px
+    }
+
+    .image-group img {
+        height: 50px;
+    }
+
+    .ill-right .content {
+        padding-right: 30px
+    }
+
+    .ill-left .content {
+        padding-left: 30px
+    }
+}
+
+@media screen and (max-width: 1119px) {}
+
+@media screen and (max-width: 1090px) {
+    .ill img {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .navbar {
+        display: none;
+    }
+
+    header .row>a {
+        top: 15px;
+        left: 0;
+    }
+
+    .right-navbar {
+        display: none
+    }
+
+    .menu {
+        display: block
+    }
+
+    .header {
+        display: block
+    }
+
+    p.responsive-hide {
+        display: block;
+        margin-top: 30px !important;
+        text-align: center;
+        font-size: 14px;
+        line-height: 1.43
+    }
+
+    p.responsive-show {
+        display: none
+    }
+
+    .content {
+        padding-right: unset !important;
+    }
+
+    .content h1 {
+        text-align: center
+    }
+
+    .button-group {
+        text-align: center
+    }
+
+    .col-12.col-md-12.col-lg-6.col-xl-6 h3 {
+        width: unset;
+        height: unset;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .col-12.col-md-12.col-lg-6.col-xl-6 {
+        text-align: center
+    }
+
+    .features {
+        display: block
+    }
+
+    .features .ill {
+        text-align: center !important;
+        margin-bottom: 30px;
+    }
+
+    .content {
+        text-align: center
+    }
+
+    .ill-left .content {
+        padding-left: unset;
+    }
+
+    .features .learn-more {
+        justify-content: center
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .col-12.col-md-4.col-xl-4 img {
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    header .row>a {
+        left: 15px;
+    }
+
+    header .row>a img {
+        width: 90%
+    }
+
+    .menu {
+        right: 15px;
+    }
+
+    .content h1 {
+        font-size: 34px
+    }
+
+    .orange h3 {
+        font-size: 24px
+    }
+
+    .navbar2 li {
+        font-size: 16px
+    }
+
+    .orange-btn-group a {
+        font-size: 14px
+    }
+
+    .learn-more {
+        font-size: 14px
+    }
+
+    .learn-more img {
+        width: 16px
+    }
+
+    .features .content p {
+        font-size: 14px
+    }
+
+    .content h2 {
+        font-size: 24px
+    }
+}
+
+@media screen and (max-width: 452px) {
+    .orange-btn-group a {
+        display: block;
+        margin: 10px 0
+    }
+
+    .btn-outline-white {
+        margin-left: unset;
+    }
+}
+
+
+@media screen and (max-width: 401px) {
+    .button-group a {
+        display: block;
+        margin: 10px 0
+    }
+
+    .button-group .get-started-btn {
+        margin-right: unset;
+    }
+}
+
+@media screen and (max-width: 366px) {
+    .image-group img {
+        height: 40px;
+    }
 }
