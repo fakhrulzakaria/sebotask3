@@ -146,6 +146,10 @@ header .navbar a {
     align-items: center
 }
 
+.header img {
+    width: 100%
+}
+
 .ill-features .ill-right {
     flex-flow: row-reverse;
 }
