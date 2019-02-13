@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
         crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/vendor/OwlCarousel2-2.3.4/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/vendor/OwlCarousel2-2.3.4/owl.theme.default.min.css">
 </head>
 
 <body>
@@ -352,9 +354,13 @@
 <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous">
 </script>
+<script src="assets/vendor/OwlCarousel2-2.3.4/owl.carousel.min.js"></script>
 <script>
-    $("#toggle").click(function () {
-        $("#navbar2").slideToggle();
+    $(document).ready(function () {
+        $("#toggle").click(function () {
+            $("#navbar2").slideToggle();
+        });
+        $(".owl-carousel").owlCarousel();
     });
 </script>
 

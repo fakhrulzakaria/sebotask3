@@ -465,6 +465,10 @@ footer li a {
     .ill-left .content {
         padding-left: 30px
     }
+
+    .cards p.title {
+        font-size: 19px
+    }
 }
 
 @media screen and (max-width: 1119px) {}
@@ -552,11 +556,40 @@ footer li a {
     .features .learn-more {
         justify-content: center
     }
+
+    img.icon {
+        width: 50px
+    }
+
+    .cards p.title {
+        font-size: 18px;
+    }
+
+    .cards p.description {
+        font-size: 14px
+    }
+
+    .cards .learn-more {
+        font-size: 14px;
+    }
+
+    .cards .learn-more img {
+        width: 15px
+    }
+
+    .cards .row div.features-item {
+        padding: 40px 50px 31px 30px;
+    }
 }
 
 @media screen and (max-width: 767px) {
     .col-12.col-md-4.col-xl-4 img {
         margin-bottom: 30px;
+    }
+
+    .cards .row div.features-item {
+        padding: 40px 30px 31px 30px;
+        margin-bottom: 40px;
     }
 }
 
